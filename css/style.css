@@ -4,6 +4,16 @@
     src: url('../fonts/TanaUncialSP.otf');
 }
 
+@font-face {
+    font-family: "FourthReign-BorderDiamond";
+    src: url('../fonts/FourthReign-BorderDiamond.otf');
+}
+
+@font-face {
+    font-family: "FourthReign-Diamond";
+    src: url('../fonts/FourthReign-Diamond.otf');
+}
+
 header {
     width: 100%;
     background-color: black;
@@ -26,13 +36,14 @@ header {
 .header-div__title {
     display: inline-block;
     color: white;
+    
+    font-size: 5vw;
+    font-family: 'Tana Uncial SP';
+
     /* clamp ограничивает объект по размерам,
     первый аргумент -- минимальное значение
     второй аргумент -- динамическое значение
     третий аргумент -- максимальное значение */
-    font-size: clamp(30px, 8vw, 150px);
-    font-family: 'Tana Uncial SP';
-
     margin-top: clamp(0, 2vw, 15px);
     margin-bottom: clamp(0, 2vw, 15px);
 }
@@ -49,6 +60,17 @@ header {
     background-color: #fff;
     padding: 3vw;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-introduction__title {
+    font-family: "FourthReign-BorderDiamond";
+    font-size: 3vw;
+}
+
+.section-introduction__text {
+    font-family: "FourthReign-Diamond";
+    font-size: 1.5vw;
+    text-indent: 3vw;
 }
 
 .second-column {

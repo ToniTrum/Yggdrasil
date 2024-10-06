@@ -41,7 +41,7 @@
 
 .niflheim {
     width: 16%;
-    right: 6.5%;
+    left: -6.5%;
     transform: translateY(475%);
 }
 
