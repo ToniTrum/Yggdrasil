@@ -1,0 +1,66 @@
+.section-yggdrasil-layout {
+    width: 100%;
+    aspect-ratio: 1/1; /* Устанавливает соотношение широты и высоты */
+    background-image: url('../img/Yggdrasil.webp');
+    background-size: contain; /* Устанавливает изображение так, чтобы оно не обрезалось */
+    background-position: center; /* Располагает изображение по центру блока */
+    background-repeat: no-repeat; /* Убирает повторы изображения */
+}
+
+.section-yggdrasil-layout__world-button {
+    position: relative; /* Позиционирование относительного нормального потока */
+    width: 11.7%;
+}
+
+.asgard {
+    width: 14%;
+    left: 42.7%;
+    /* Так как в родительском элементе не указана высота в явном виде
+    при попытке вертикального позиционирования через top и bottom ничего
+    происходить не будет, для решения этой проблемы используется 
+    функция translateY, позволяющая позиционировать элемент относительно
+    y координаты в процентном соотношении */
+    transform: translateY(94%);
+}
+
+.midgard {
+    width: 8.5%;
+    left: 30.887%;
+    transform: translateY(300%);
+}
+
+.alfheim {
+    right: 8.5%;
+    transform: translateY(255%);
+}
+
+.muspellheim {
+    left: 36%;
+    transform: translateY(255%);
+}
+
+.niflheim {
+    width: 16%;
+    right: 6.5%;
+    transform: translateY(475%);
+}
+
+.jotunheim {
+    right: 53.06%;
+    transform: translateY(554%);
+}
+
+.vanaheim {
+    right: 75%;
+    transform: translateY(443%);
+}
+
+.helheim {
+    left: 76.17%;
+    transform: translateY(450%);
+}
+
+.svartalfheim {
+    left: 74%;
+    transform: translateY(340%);
+}
