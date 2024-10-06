@@ -1,10 +1,3 @@
-/* Сброс отступов и стандартных стилей */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 /* Общие стили для body */
 body {
     font-family: Arial, sans-serif;
@@ -29,14 +22,14 @@ body {
 }
 
 /* Основной контент */
-.one-el {
+.first-column {
     background-color: #fff;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Sidebar (боковая панель) */
-.two-el {
+.second-column {
     background-color: #eee;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);

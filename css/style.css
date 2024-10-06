@@ -1,92 +1,73 @@
+/* Подключение шрифта */
+@font-face {
+    font-family: "Tana Uncial SP";
+    src: url('../fonts/TanaUncialSP.otf');
+}
+
 header {
+    width: 100%;
     background-color: black;
     padding-left: 2vw;
+    vertical-align: top;
+    margin-bottom: 2vw;
 }
 
-@media (max-width: 400px) {
-    aside {
-        flex: 0 0 33.333333%;
-        max-width: 33.333333%;
-        order: 1;
-    }
-
-    main {
-        flex: 0 0 66.666667%;
-        max-width: 66.666667%;
-        order: 2;
-    }
-
-    header {
-        background-color: black;
-    }
-    
-    .header-div__logo {
-        width: 40vw;
-        min-width: 30px;
-    }
+.header-div {
+    display: flex; /* Используем Flexbox для выравнивания */
+    align-items: center; /* Выравнивает элементы по вертикали по центру */
 }
 
-@media (max-width: 1000px) {
-    aside {
-        flex: 0 0 33.333333%;
-        max-width: 33.333333%;
-        order: 1;
-    }
-
-    main {
-        flex: 0 0 66.666667%;
-        max-width: 66.666667%;
-        order: 2;
-    }
-
-    header {
-        background-color: black;
-    }
-    
-    .header-div__logo {
-        width: 10vw;
-        max-width: 100px;
-    }
+.header-div__logo {
+    width: 8vw;
+    margin-right: 2vw;
+    max-width: 150px;
 }
 
-@media (max-width: 1400px) {
-    aside {
-        flex: 0 0 25%;
-        max-width: 25%;
-    }
-    main {
-        flex: 0 0 75%;
-        max-width: 75%;
-    }
-    
-    .header-div__logo {
-        width: 10vw;
-        max-width: 150px;
-    }
+.header-div__title {
+    display: inline-block;
+    color: white;
+    /* clamp ограничивает объект по размерам,
+    первый аргумент -- минимальное значение
+    второй аргумент -- динамическое значение
+    третий аргумент -- максимальное значение */
+    font-size: clamp(30px, 8vw, 150px);
+    font-family: 'Tana Uncial SP';
 
-    .header-div__title {
-        display: inline;
-        color: white;
-        font-size: 10vw;
+    margin-top: clamp(0, 2vw, 15px);
+    margin-bottom: clamp(0, 2vw, 15px);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Основной контент занимает 3 части, sidebar — 1 часть */
+    gap: 3vw; /* Пробел между колонками */
+    padding-left: 1vw;
+    padding-top: 1vw;
+}
+
+.first-column {
+    background-color: #fff;
+    padding: 3vw;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.second-column {
+    background-color: #eee;
+    padding: 3vw;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 800px) {
+    .container {
+        grid-template-columns: 1fr; /* Одна колонка на маленьких экранах */
     }
 }
 
-@media (min-width: 1401px) {
-    aside {
-        flex: 0 0 25%;
-        max-width: 25%;
-    }
-    main {
-        flex: 0 0 75%;
-        max-width: 75%;
-    }
-
-    header {
-        background-color: black;
-    }
-    
-    .header-div__logo {
-        width: 10vw;
-        max-width: 200px;
+@media (min-width: 1400px) {
+    .container {
+        grid-template-columns: 3fr 1fr;
     }
 }
+
+
