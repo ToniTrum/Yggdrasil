@@ -108,13 +108,10 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px;
-}
-/* .main-text{
-      font-family: "Kelly Slab", sans-serif;
-        font-weight: 600;
-        font-style: normal;
-     
-} */
+    font-family: "Kelly Slab", sans-serif;
+    font-weight: 600;
+    font-style: normal; 
+} 
 
 
 /* Эффект при наведении на ссылку */
@@ -122,6 +119,15 @@ footer {
     border-radius: 10%;
     background-color: #4b4b4b; /* Серый фон при наведении */
     color: #e0e0e0; /* Светлый цвет текста при наведении */
+}
+
+.contact{
+    
+  color: white;
+  transition: 0.5s ease-in-out;
+}
+.contact:hover{
+    color:rgb(248, 241, 153) ;
 }
 
 @media (max-width: 800px) {
