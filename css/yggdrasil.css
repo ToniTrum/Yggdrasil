@@ -5,11 +5,13 @@
     background-size: contain; /* Устанавливает изображение так, чтобы оно не обрезалось */
     background-position: center; /* Располагает изображение по центру блока */
     background-repeat: no-repeat; /* Убирает повторы изображения */
+ 
 }
 
 .section-yggdrasil-layout__world-button {
     position: relative; /* Позиционирование относительного нормального потока */
     width: 11.7%;
+
 }
 
 .asgard {
@@ -27,11 +29,13 @@
     width: 8.5%;
     left: 30.887%;
     transform: translateY(300%);
+    
 }
 
 .alfheim {
     right: 8.5%;
     transform: translateY(255%);
+    
 }
 
 .muspellheim {
@@ -58,9 +62,28 @@
 .helheim {
     left: 76.17%;
     transform: translateY(450%);
+   
+
 }
 
 .svartalfheim {
     left: 74%;
     transform: translateY(340%);
+    
+}
+ 
+.section-yggdrasil-layout__world-button{
+  text-decoration: none;
+  border: 3px solid  ;
+  border-radius:  50%; 
+  box-shadow: 0 0 40px 40px #9f00fe inset, 0 0 0 0 #F137A6;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: white;
+  transition: 0.5s ease-in-out;
+}
+.section-yggdrasil-layout__world-button:hover{
+    box-shadow: 0 0 10px 0 #3739f1 inset, 0 0 10px 4px #fffc00;
+     color: #ffffff;
 }
