@@ -17,11 +17,14 @@
 body {
     font-family: "FourthReign-Diamond";
     font-size: 1.5vw;
+    line-height: 1.6;
+    background-color: #eae7e7;
 }
 
 header {
     width: 100%;
-    background-color: black;
+    background-color:rgb(32, 32, 32);
+    color: #fff;
     padding-left: 2vw;
     vertical-align: top;
     margin-bottom: 2vw;
@@ -74,16 +77,36 @@ header {
 
 .section-introduction__text {
     text-indent: 3vw;
+    color: #333;
 }
 
 .second-column {
-    background-color: #eee;
+    background-color: #ffffff;
     padding: 3vw;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .section-introduction {
     margin-bottom: 3vw;
+}
+
+/* Стили для фото */
+.photo {
+    width: 40%;
+    float: right;
+    margin: 1.5vw;
+}
+
+/* Форматирование текста */
+.tb{
+    font-weight: 600;
+}
+
+footer {
+    background-color:rgb(32, 32, 32);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
 }
 
 /* Адаптация для мобильных устройств */
