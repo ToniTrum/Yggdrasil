@@ -139,6 +139,10 @@ footer {
     color:rgb(248, 241, 153) ;
 }
 
+.perekur {
+    width: 30vw;
+}
+
 @media (max-width: 800px) {
     .container {
         grid-template-columns: 1fr; /* Одна колонка на маленьких экранах */
