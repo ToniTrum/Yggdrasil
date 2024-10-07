@@ -22,7 +22,7 @@ body {
 }
 
 header {
-    width: 100%;
+    width: 98vw;
     background-color:rgb(32, 32, 32);
     color: #fff;
     padding-left: 2vw;
@@ -56,18 +56,24 @@ header {
     margin-bottom: clamp(0, 2vw, 15px);
 }
 
+main {
+    min-height: 100vh;
+    padding: 2vw 2vw 2vw 2vw;
+    margin-bottom: 0;
+}
+
 .container {
     display: grid;
     grid-template-columns: 2fr 1fr; /* Основной контент занимает 3 части, sidebar — 1 часть */
     gap: 3vw; /* Пробел между колонками */
-    padding-left: 1vw;
+    /* padding-left: 1vw; */
     padding-top: 1vw;
 }
 
 .first-column {
     background-color: #fff;
     padding: 3vw;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 2vw rgba(0, 0, 0, 0.1);
 }
 
 .section-introduction__title {
@@ -83,7 +89,7 @@ header {
 .second-column {
     background-color: #ffffff;
     padding: 3vw;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 2vw rgba(0, 0, 0, 0.1);
 }
 
 .source-color {
@@ -112,15 +118,19 @@ header {
 }
 
 footer {
-    
+    width: 100%;
     background-color:rgb(32, 32, 32);
     color: #fff;
     text-align: center;
-    padding: 4vw;
+    padding-top: 4vw;
     font-family: "Kelly Slab", sans-serif;
     font-weight: 600;
     font-style: normal; 
-} 
+}
+
+.footer-div {
+    padding-bottom: 4vw;
+}
 
 
 /* Эффект при наведении на ссылку */
@@ -154,5 +164,6 @@ footer {
         grid-template-columns: 3fr 1fr; 
         /* Увеличение размеров первой коллонки для 
         устройств с широким размером экранов */
+        padding-left: 0;
     }
 }    
