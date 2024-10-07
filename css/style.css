@@ -14,6 +14,11 @@
     src: url('../fonts/FourthReign-Diamond.otf');
 }
 
+body {
+    font-family: "FourthReign-Diamond";
+    font-size: 1.5vw;
+}
+
 header {
     width: 100%;
     background-color: black;
@@ -68,8 +73,6 @@ header {
 }
 
 .section-introduction__text {
-    font-family: "FourthReign-Diamond";
-    font-size: 1.5vw;
     text-indent: 3vw;
 }
 

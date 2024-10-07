@@ -5,11 +5,22 @@
     background-size: contain; /* Устанавливает изображение так, чтобы оно не обрезалось */
     background-position: center; /* Располагает изображение по центру блока */
     background-repeat: no-repeat; /* Убирает повторы изображения */
+    position: relative;
 }
 
 .section-yggdrasil-layout__world-button {
-    position: relative; /* Позиционирование относительного нормального потока */
+    position: absolute; /* Позиционирование относительного нормального потока */
     width: 11.7%;
+    display: inline-block;
+    line-height: 45px;
+    border-radius: 45px;
+    background: #2EE59D;
+    box-shadow: 0 5px 5px 5px rgba(46, 229, 157, .4);
+    transition: .3s;
+}
+
+.section-yggdrasil-layout__world-button:hover {
+    box-shadow: 0 10px 10px 10px rgba(46, 229, 157, .4);
 }
 
 .asgard {
@@ -20,47 +31,47 @@
     происходить не будет, для решения этой проблемы используется 
     функция translateY, позволяющая позиционировать элемент относительно
     y координаты в процентном соотношении */
-    transform: translateY(94%);
+    transform: translateY(106%);
 }
 
 .midgard {
     width: 8.5%;
-    left: 30.887%;
-    transform: translateY(300%);
+    left: 45.5%;
+    transform: translateY(390%);
 }
 
 .alfheim {
-    right: 8.5%;
-    transform: translateY(255%);
+    left: 18%;
+    transform: translateY(269%);
 }
 
 .muspellheim {
-    left: 36%;
-    transform: translateY(255%);
+    left: 70%;
+    transform: translateY(269%);
 }
 
 .niflheim {
     width: 16%;
-    left: -6.5%;
+    left: 41.68%;
     transform: translateY(475%);
 }
 
 .jotunheim {
-    right: 53.06%;
-    transform: translateY(554%);
+    left: 11.66%;
+    transform: translateY(590.4%);
 }
 
 .vanaheim {
-    right: 75%;
-    transform: translateY(443%);
+    left: 2%;
+    transform: translateY(483%);
 }
 
 .helheim {
     left: 76.17%;
-    transform: translateY(450%);
+    transform: translateY(590.4%);
 }
 
 .svartalfheim {
-    left: 74%;
-    transform: translateY(340%);
+    left: 85%;
+    transform: translateY(483%);
 }
