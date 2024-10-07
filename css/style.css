@@ -86,6 +86,15 @@ header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.source-color {
+    font-size: 5vw;
+    color: rgb(204, 59, 59);
+}
+
+.source-size {
+    font-size: 2vw;
+}
+
 .section-introduction {
     margin-bottom: 3vw;
 }
