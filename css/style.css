@@ -103,13 +103,27 @@ header {
 }
 
 footer {
+    
     background-color:rgb(32, 32, 32);
     color: #fff;
     text-align: center;
     padding: 10px;
 }
+/* .main-text{
+      font-family: "Kelly Slab", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+     
+} */
 
-/* Адаптация для мобильных устройств */
+
+/* Эффект при наведении на ссылку */
+.second-column     ul li a:hover {
+    border-radius: 10%;
+    background-color: #4b4b4b; /* Серый фон при наведении */
+    color: #e0e0e0; /* Светлый цвет текста при наведении */
+}
+
 @media (max-width: 800px) {
     .container {
         grid-template-columns: 1fr; /* Одна колонка на маленьких экранах */
