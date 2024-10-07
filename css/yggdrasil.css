@@ -10,7 +10,8 @@
 }
 
 .section-yggdrasil-layout__world-button {
-    position: absolute; /* Позиционирование относительного нормального потока */
+    position: absolute; /* Абсолютное позиционирование относительно
+    родительского элемента, так как у родительского элемента position: relative */
     width: 11.7%;
 
     display: inline-block;
@@ -27,28 +28,19 @@
 
 .asgard {
     width: 14%;
-    left: 42.7%;
+    left: 42.25%;
     /* Так как в родительском элементе не указана высота в явном виде
     при попытке вертикального позиционирования через top и bottom ничего
     происходить не будет, для решения этой проблемы используется 
     функция translateY, позволяющая позиционировать элемент относительно
     y координаты в процентном соотношении */
-    transform: translateY(106%);
+    transform: translateY(101%);
 }
 
 .midgard {
     width: 8.5%;
-    left: 30.887%;
-    transform: translateY(300%);
-    
-}
-
-.alfheim {
-    right: 8.5%;
-    transform: translateY(255%);
-    
-    left: 45.5%;
-    transform: translateY(390%);
+    left: 45.19%;
+    transform: translateY(353%);
 }
 
 .alfheim {
@@ -63,25 +55,23 @@
 
 .niflheim {
     width: 16%;
-    left: 41.68%;
-    transform: translateY(475%);
+    left: 41.38%;
+    transform: translateY(452%);
 }
 
 .jotunheim {
-    left: 11.66%;
-    transform: translateY(590.4%);
+    left: 11.26%;
+    transform: translateY(554%);
 }
 
 .vanaheim {
     left: 2%;
-    transform: translateY(483%);
+    transform: translateY(453%);
 }
 
 .helheim {
-    left: 76.17%;
-    transform: translateY(450%);
-   
-
+    left: 75.79%;
+    transform: translateY(554%);
 }
 
 .svartalfheim {
@@ -93,7 +83,7 @@
 
 .svartalfheim {
     left: 85%;
-    transform: translateY(483%);
+    transform: translateY(453%);
 }
  
 .section-yggdrasil-layout__world-button{
