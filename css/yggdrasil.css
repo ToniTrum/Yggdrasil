@@ -13,91 +13,68 @@
     position: absolute; /* Абсолютное позиционирование относительно
     родительского элемента, так как у родительского элемента position: relative */
     width: 11.7%;
-
     display: inline-block;
-    line-height: 45px;
-    border-radius: 45px;
     background: #2EE59D;
-    box-shadow: 0 5px 5px 5px rgba(46, 229, 157, .4);
-    transition: .3s;
+    text-decoration: none;
+    border: 0.3vw solid  ;
+    border-radius: 50%; 
+    box-shadow: 0 0 0.6vw 0.6vw #9f00fe inset, 0 0 0 0 #F137A6;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.3vw;
+    color: white;
+    transition: 0.5s ease-in-out;
 }
 
 .section-yggdrasil-layout__world-button:hover {
-    box-shadow: 0 10px 10px 10px rgba(46, 229, 157, .4);
+    box-shadow: 0 0 1vw 0 #3739f1 inset, 0 0 1vw 0.3vw #fffc00;
+    color: #ffffff;
 }
 
 .asgard {
     width: 14%;
     left: 42.25%;
-    /* Так как в родительском элементе не указана высота в явном виде
-    при попытке вертикального позиционирования через top и bottom ничего
-    происходить не будет, для решения этой проблемы используется 
-    функция translateY, позволяющая позиционировать элемент относительно
-    y координаты в процентном соотношении */
-    transform: translateY(101%);
+    top: 14.9%;
 }
 
 .midgard {
     width: 8.5%;
     left: 45.19%;
-    transform: translateY(353%);
+    top: 32.7%;
 }
 
 .alfheim {
     left: 18%;
-    transform: translateY(269%);
+    top: 34%;
 }
 
 .muspellheim {
     left: 70%;
-    transform: translateY(269%);
+    top: 34%;
 }
 
 .niflheim {
     width: 16%;
     left: 41.38%;
-    transform: translateY(452%);
+    top: 75.23%;
 }
 
 .jotunheim {
     left: 11.26%;
-    transform: translateY(554%);
+    top: 68.2%;
 }
 
 .vanaheim {
     left: 2%;
-    transform: translateY(453%);
+    top: 56%;
 }
 
 .helheim {
     left: 75.79%;
-    transform: translateY(554%);
-}
-
-.svartalfheim {
-    left: 74%;
-    transform: translateY(340%);
-    
-    transform: translateY(590.4%);
+    top: 68.2%;
 }
 
 .svartalfheim {
     left: 85%;
-    transform: translateY(453%);
-}
- 
-.section-yggdrasil-layout__world-button{
-  text-decoration: none;
-  border: 3px solid  ;
-  border-radius:  50%; 
-  box-shadow: 0 0 40px 40px #9f00fe inset, 0 0 0 0 #F137A6;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  letter-spacing: 2px;
-  color: white;
-  transition: 0.5s ease-in-out;
-}
-.section-yggdrasil-layout__world-button:hover{
-    box-shadow: 0 0 10px 0 #3739f1 inset, 0 0 10px 4px #fffc00;
-     color: #ffffff;
+    top: 56%;
 }
