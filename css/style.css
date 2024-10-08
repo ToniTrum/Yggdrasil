@@ -27,7 +27,6 @@ header {
     color: #fff;
     padding-left: 2vw;
     vertical-align: top;
-    margin-bottom: 2vw;
 }
 
 .header-div {
@@ -60,6 +59,10 @@ main {
     min-height: 100vh;
     padding: 2vw 2vw 2vw 2vw;
     margin-bottom: 0;
+}
+
+.section-back-button__button {
+    width: 10%;
 }
 
 .container {
@@ -169,6 +172,10 @@ footer {
         font-size: 4.5vw;
     }
 
+    .section-back-button__button {
+        width: 15%;
+    }
+
     .section-introduction__title {
         font-size: 12vw;
     }
@@ -188,17 +195,22 @@ footer {
 
 @media screen and (max-width: 400px) {
     .photo {
-        width: 80%;
-        float: left;
-        margin-right: 20%;
+        width: 100%;
+        float: none;
+        margin-right: 0;
+        margin-left: 0;
     }
 
     body {
         font-size: 6.5vw;
     }
 
+    .section-back-button__button {
+        width: 20%;
+    }
+
     .section-introduction__title {
-        font-size: 15vw;
+        font-size: clamp(0, 14.5vw, 5px);
     }
 
     .section-introduction__text {
